@@ -46,7 +46,8 @@ namespace LHJAterceiroMVC.Controllers
 
         }
 
-        public IActionResult ExemploTempData() {
+        public IActionResult ExemploTempData() 
+        {
             Juridica juridica = new Juridica();
             juridica.Id = 1075;
             juridica.Nome = "Mamão";
@@ -55,8 +56,8 @@ namespace LHJAterceiroMVC.Controllers
 
             TempData["Id"] = juridica.Id;
             TempData["Nome"] = juridica.Nome;
-            TempData["CNPJ"] = juridica.CNPJ;
-            TempData["IE"] = juridica.IE;
+            TempData["CNPJ"] = Convert.ToString(juridica.CNPJ);
+            TempData["IE"] = Convert.ToString(juridica.IE);
 
             return RedirectToAction("juridica");
 

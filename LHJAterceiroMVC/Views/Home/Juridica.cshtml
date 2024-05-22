@@ -11,7 +11,10 @@
     <h2>Inscrição Estadual: @Model.IE</h2>
     <br />
     <div>
-        <h4>Código: @TempData["Nome"] CNPJ: @TempData["CNPJ"] IE: @TempData["IE"] </h4>
+        @if (TempData["Id"] != null)
+        {
+        <h4>Código: @TempData["Nome"] CNPJ: @TempData["CNPJ"] IE: @TempData["IE"] </h4>    
+        }
     </div>
 
 
