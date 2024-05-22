@@ -1,0 +1,19 @@
+﻿@model LHJAterceiroMVC.Models.Fisica
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<main aria-labelledby="title">
+    <h2>Código: @Model.Id</h2>
+    <h2>Nome: @Model.Nome</h2>
+    <h2>Sexo: @Model.Sexo</h2>
+    <h2>RG: @Model.RG</h2>
+    <h2>Dígito: @Model.Dig_RG</h2>
+    <hr />
+    <h4>Exemplo com ViewData</h4>
+    <h3>@ViewData["Id"]</h3>
+    <h3>@ViewData["Nome"]</h3>
+    <h3>@ViewData["Sexo"]</h3>
+    <h3>@ViewData["CPF"] </h3>
+    <h3>@ViewData["RG"] - @ViewData["Dig_RG"]</h3>
+</main>

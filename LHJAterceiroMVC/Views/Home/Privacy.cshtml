@@ -1,0 +1,16 @@
+﻿@model LHJAterceiroMVC.Models.Pessoa
+@{
+    ViewData["Title"] = "Privacy Policy";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>Use this page to detail your site's privacy policy.</p>
+<main aria-labelledby="Title">
+    <h2>@Model.Id</h2>
+    <h2>@Model.Nome</h2>
+    <h2>@Model.Sexo</h2>
+    <hr />
+    <h2>Código: @ViewBag.Id</h2>
+    <h2>Nome: @ViewBag.Nome</h2>
+    <h2>Sexo: @ViewBag.Sexo</h2>
+</main>
