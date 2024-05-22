@@ -56,11 +56,18 @@ namespace LHJAterceiroMVC.Controllers
 
             TempData["Id"] = juridica.Id;
             TempData["Nome"] = juridica.Nome;
+            
+            
             TempData["CNPJ"] = Convert.ToString(juridica.CNPJ);
             TempData["IE"] = Convert.ToString(juridica.IE);
 
             return RedirectToAction("juridica");
 
+        }
+
+        public IActionResult Pessoa() 
+        {
+            return View();
         }
 
         public IActionResult Privacy()
