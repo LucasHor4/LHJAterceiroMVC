@@ -1,0 +1,19 @@
+﻿@model LHJAterceiroMVC.Models.Juridica
+@{
+    ViewData["Title"] = "Pessoa jurídica";
+}
+<h1>@ViewData["Title"]</h1>
+
+<main aria-labelledy="title">
+    <h2>Código: @Model.Id</h2>
+    <h2>Nome: @Model.Nome</h2>
+    <h2>CNPJ @Model.CNPJ</h2>
+    <h2>Inscrição Estadual: @Model.IE</h2>
+    <br />
+    <div>
+        <h4>Código: @TempData["Nome"] CNPJ: @TempData["CNPJ"] IE: @TempData["IE"] </h4>
+    </div>
+
+
+
+</main>
