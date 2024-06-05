@@ -67,11 +67,6 @@ namespace LHJAterceiroMVC.Controllers
 
         public IActionResult Pessoa() 
         {
-            return View();
-        }
-
-        public IActionResult Privacy()
-        {
             Pessoa pessoa = new Pessoa();
             pessoa.Id = 1;
             pessoa.Nome = "Jhonatham_Joestar";
@@ -80,6 +75,11 @@ namespace LHJAterceiroMVC.Controllers
             ViewBag.Nome = pessoa.Nome;
             ViewBag.Sexo = pessoa.Sexo;
             return View(pessoa);
+        }
+
+        public IActionResult Privacy()
+        {
+            return View();
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
